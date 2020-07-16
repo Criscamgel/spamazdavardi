@@ -97,6 +97,11 @@ export class FormStepComponent{
       }
     }
 
+    this.contacto.OtrosDatos.UsuarioRadica = 'a.usechep';
+    this.contacto.OtrosDatos.ConcesionarioRadicacion = 310;
+    this.contacto.OtrosDatos.IdentificacionVendedor = 121;
+
+
     this.centrales.authenticate(this.contacto);
     setTimeout(() => {
       this.centrales.response(this.contacto).subscribe((resp:any) => {
@@ -196,6 +201,8 @@ export interface OtrosDatos {
   AutorizaMareigua?: Boolean;  
   ValorFinanciar?: Number;
   IdentificacionVendedor?: Number;
+  UsuarioRadica?: Number;
+  ConcesionarioRadicacion?: Number;
 }
 
 export interface ContactoInterface{
