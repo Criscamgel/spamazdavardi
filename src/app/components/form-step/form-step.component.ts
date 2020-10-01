@@ -61,8 +61,10 @@ export class FormStepComponent{
       AutorizaConsultaCentrales: false,  
       AutorizaMareigua: false,  
       ValorFinanciar: null,
-      IdentificacionVendedor: null,
-      Marca: 18  
+      IdentificacionVendedor: null 
+    },
+    DatosVehiculo: {
+      Marca: 18 
     }
   }
 
@@ -204,7 +206,10 @@ export interface OtrosDatos {
   IdentificacionVendedor?: Number;
   UsuarioRadica?: Number;
   ConcesionarioRadicacion?: Number;
-  Marca: Number;
+}
+
+export interface DatosVehiculo {
+  Marca: number;
 }
 
 export interface ContactoInterface{
@@ -212,4 +217,5 @@ export interface ContactoInterface{
   DatosBasicos?:DatosBasicos;
   DatosFinancieros?:DatosFinancieros;
   OtrosDatos?:OtrosDatos;
+  DatosVehiculo?:DatosVehiculo;
 }
