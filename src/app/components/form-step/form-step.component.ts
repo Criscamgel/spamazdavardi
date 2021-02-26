@@ -13,7 +13,7 @@ import es from '@angular/common/locales/es';
 })
 export class FormStepComponent{
 
-  constructor(private centrales: CentralesService) { 
+  constructor(public centrales: CentralesService) { 
     centrales.contacto.DatosBasicos.TipoDocumento = 1;
    }
 
